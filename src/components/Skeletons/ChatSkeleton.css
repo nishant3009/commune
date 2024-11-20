@@ -1,0 +1,47 @@
+.chatSkeleton {
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 623px;
+    background-color: #f0f0f0;
+}
+
+.chatSkeleton-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.chatSkeleton-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+.chatSkeleton-message {
+    width: 60%;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

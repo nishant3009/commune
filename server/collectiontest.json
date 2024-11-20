@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "e2e9ca87-df82-401e-ad35-b650d7184bf8",
+		"name": "Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29862275",
+		"_collection_link": "https://speeding-meteor-807066.postman.co/workspace/7b43bedf-a422-48bf-b95e-b599ba1ba337/collection/27964045-e2e9ca87-df82-401e-ad35-b650d7184bf8?action=share&source=collection_link&creator=29862275"
+	},
+	"item": [
+		{
+			"name": "Export",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"exportAddresses\": [\r\n\"atrivedi@prontoforms.com\"\r\n],\r\n\"timeZone\": \"America/Toronto\",\r\n\"locale\": \"en\",\r\n\"formatType\": \"Csv\",\r\n\"format\": {\r\n\"delimiter\": \",\",\r\n\"encoding\": \"UTF-8\",\r\n\"addQuestionTextHeader\": true,\r\n\"addQuestionLabelHeader\": false,\r\n\"metadataFields\": []\r\n},\r\n\"filter\": {\r\n\"userAndGroupIds\": [],\r\n\"stateFilter\": \"Any\",\r\n\"timeFilterField\": \"DispatchedDate\",\r\n\"startTime\": \"2023-09-01T00:00:00Z\",\r\n\"endTime\": \"2023-09-14T00:00:00Z\"\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "https://api.prontoforms.com/api/1.1/formspaces/1911466003/forms/1423938012/data/export",
+					"protocol": "https",
+					"host": [
+						"api",
+						"prontoforms",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.1",
+						"formspaces",
+						"1911466003",
+						"forms",
+						"1423938012",
+						"data",
+						"export"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export 2",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "Sfjaskq2XuneEmUXkaqC0x4dW4q4OBXvXpCvjFKr2bn8SACrW/V1vnfJmiK7fxHG",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "PFK-c947b25a-deae-4564-82c5-617e543b7797",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

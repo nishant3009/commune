@@ -1,0 +1,35 @@
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 224px;
+    height: 715px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.skeleton-item {
+    position: relative;
+    top: 12px;
+    left: 10px;
+    width: 80%;
+    height: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
